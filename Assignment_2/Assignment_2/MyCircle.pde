@@ -1,9 +1,8 @@
-class MyRectangle
+class MyCircle
 {
   private int x;
   private int y;
-  private int w;
-  private int h;
+  private int rad;
   
   private int r;
   private int g;
@@ -12,12 +11,11 @@ class MyRectangle
   
   
   //constructor
-public MyRectangle(int x, int y, int w, int h, int r, int g, int b)
+public MyCircle(int x, int y, int rad, int r, int g, int b)
   {
     this.x = x;
     this.y = y;
-    this.w = w;
-    this.h = h;
+    this.rad = rad;
     this.r = r;
     this.g = g;
     this.b = b;
@@ -42,7 +40,7 @@ void doSomething()
   g = (int)random(256);
   b = (int)random(256);
   fill(r,g,b);
-  rect(x,y,w,h);
+  circle(x,y,rad);
 }
 
 //void changeColor()
