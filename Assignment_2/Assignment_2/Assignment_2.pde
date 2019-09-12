@@ -2,7 +2,7 @@
 MyRectangle myRect = new MyRectangle(20,20,200,200,0,0,255);
 MyRectangle myRect2 = new MyRectangle(780,780,200,200,0,255,0);
 MyRectangle myRect3 = new MyRectangle(300,300,200,200,255,0,0);
-MyCircle myCirc = new MyCircle(500,500,200);
+MyCircle myCirc = new MyCircle(500,500,200, 0, 255, 0);
 int borderStroke = 5;
 int count = 0;
 
@@ -22,16 +22,15 @@ void draw()
   myRect.doSomething(); 
   myRect2.doSomething();
   myRect3.doSomething();
+ 
   
   count+=10;
   
- //if(count >=1000)
- // {
+ if(count >=1000)
+  {
    
- //   myRect.changeColor();
- //   myRect2.changeColor();
- //   myRect3.changeColor();
+   myCirc.doSomething();
       
- // }
+  }
  
 }

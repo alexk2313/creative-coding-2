@@ -24,16 +24,16 @@ public MyCircle(int x, int y, int rad, int r, int g, int b)
 void doSomething()
 {
   
-  x+= dist; 
-  y+= dist;
-  if(x < 0 || x > 800)
-  {
-    dist *= -1;
-  }
-    if(y < 0 || y > 800)
-  {
-    dist *= -1;
-  }
+  //x+= dist; 
+  //y+= dist;
+  //if(x < 0 || x > 800)
+  //{
+  //  dist *= -1;
+  //}
+  //  if(y < 0 || y > 800)
+  //{
+  //  dist *= -1;
+  //}
 
   
   r = (int)random(256);
