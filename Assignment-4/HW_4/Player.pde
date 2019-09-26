@@ -32,7 +32,9 @@ public Player(int x, int y, int w, int h, int r, int g, int b)
 
 
 //********** creating keypressed movement ***********************
-void updateY()
+
+//setting bounds and movement for y
+void updateYSpeed()
 {
   if(key == 's')
   {
@@ -43,9 +45,18 @@ void updateY()
   {
     y -= 5;
   }
+  if(y > height)
+  {
+    y = 0;
+  }
+    if(y < 0)
+  {
+    y = height;
+  }
 }
 
-void updateX()
+//setting bounds and movement for x
+void updateXSpeed()
 {
     if(key == 'd')
   {
@@ -55,6 +66,14 @@ void updateX()
     if(key == 'a')
   {
     x -= 5;
+  }
+      if(x < 0)
+  {
+    x = width;
+  }
+      if(x > width)
+  {
+    x = 0;
   }
 }
 }
