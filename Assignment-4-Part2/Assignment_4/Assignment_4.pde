@@ -3,6 +3,8 @@ Rock myRock;
 ArrayList<Rock> myRockArrayList;
 int x = 0;
 int y = 0;
+int xPlayer = 500;
+int yPlayer = 500;
 
 
 Rectangle myRect1; 
@@ -46,7 +48,7 @@ void setup()
   }
   
   //*********** adding player***************
-  myRect1 = new Rectangle(500,500,"mouse.jpg",50,50);
+  myRect1 = new Rectangle(xPlayer,yPlayer,"mouse.jpg",50,50);
 }
 
 
@@ -66,7 +68,7 @@ void draw()
  
   
   //player
-  myRect1.keyPressed();
+  myRect1.draw(xPlayer, yPlayer);
   
   
   //enemies
@@ -76,3 +78,41 @@ void draw()
   }
 
 }
+
+//void keyPressed()
+//{
+//  //********************trying to get movement**************************
+//  if(key == 'w')
+//  {
+//    yPlayer -= 5;
+//  }
+//    if(key == 's')
+//  {
+//    yPlayer += 5;
+//  }
+//    if(key == 'a')
+//  {
+//    xPlayer -= 5;
+//  }
+//    if(key == 'd')
+//  {
+//    xPlayer += 5;
+//  }
+  
+//  if(xPlayer > width - 50)
+//  {
+//    xPlayer = 0;
+//  }
+//  if(xPlayer < 0)
+//  {
+//    xPlayer = width - 50;
+//  }
+//  if(yPlayer > height - 50)
+//  {
+//   yPlayer = 0;
+//  }
+//    if(yPlayer < 0)
+//  {
+//   yPlayer = height - 50;
+//  }
+//}
