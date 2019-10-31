@@ -20,5 +20,17 @@ void draw()
 {
   image(rockImage, x, y);
 }
-  
+
+
+
+int getX()
+ {
+     
+     return x;
+ }
+   
+int getY()
+ {
+      return y; 
+ }
 }
